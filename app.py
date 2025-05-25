@@ -22,7 +22,7 @@ def get_base64_bg(file_path):
 bg_image = get_base64_bg("background.avif")
 # 💫 Custom Background and Styling
 # Toggle for Dark Mode
-dark_mode = st.sidebar.toggle("🌗 Dark Mode", value=False)
+dark_mode = st.sidebar.checkbox("🌗 Dark Mode", value=False)
 
 
 # CSS Styling
