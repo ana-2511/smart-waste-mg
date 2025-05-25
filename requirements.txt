@@ -6,3 +6,6 @@ pandas
 numpy
 requests
 googletrans==4.0.0-rc1
+keras==3.0.5
+tensorflow==2.13.0
+
