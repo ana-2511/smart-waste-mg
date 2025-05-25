@@ -269,8 +269,20 @@ for key, default in {
         st.session_state[key] = default
 
 
-# Load the DenseNet201 model
-model = load_model("saved_models/DenseNet201.keras")
+# File ID from your Google Drive share link
+file_id = "1NgqMCMZDmltzmRAXbDFlxyhQMOH4UfTI"
+
+# Output path where model will be saved in Streamlit Cloud
+output_path = "DenseNet201.keras"
+
+# Download only if file doesn't exist (to avoid repeated downloads on rerun)
+if not os.path.exists(output_path):
+    url = f"https://drive.google.com/uc?id={file_id}"
+    gdown.download(url, output_path, quiet=False)
+
+# Now load the model
+from tensorflow.keras.models import load_model
+model = load_model(output_path, compile=False)
 
 # Class Names (Based on your dataset)
 class_names = ['aerosol_cans', 'aluminum_food_cans', 'aluminum_soda_cans', 'cardboard_boxes',
