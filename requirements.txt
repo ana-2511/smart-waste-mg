@@ -1,10 +1,10 @@
 streamlit==1.22.0
-tensorflow-cpu==2.12.0
-pillow==9.5.0
-pandas==1.5.3
-numpy==1.24.3
-requests==2.31.0
+tensorflow==2.12.0
+pillow
+pandas
+numpy
+requests
 googletrans==4.0.0-rc1
-gdown==4.7.1
+gdown
 
 
