@@ -12,6 +12,9 @@ from googletrans import Translator
 
 st.set_page_config(page_title="Smart Waste App", layout="centered")
 
+import sys
+st.write("Python version:", sys.version)
+
 def get_base64_bg(file_path):
     with open(file_path, "rb") as f:
         data = f.read()
