@@ -12,15 +12,14 @@ from googletrans import Translator
 
 st.set_page_config(page_title="Smart Waste App", layout="centered")
 
-import sys
-st.write("Python version:", sys.version)
+
 
 def get_base64_bg(file_path):
     with open(file_path, "rb") as f:
         data = f.read()
     return base64.b64encode(data).decode()
 
-bg_image = get_base64_bg(".images/background.avif")
+bg_image = get_base64_bg("background.avif")
 # 💫 Custom Background and Styling
 # Toggle for Dark Mode
 dark_mode = st.sidebar.toggle("🌗 Dark Mode", value=False)
