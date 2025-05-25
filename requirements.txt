@@ -1,11 +1,7 @@
-gdown
 streamlit==1.25.0
 tensorflow==2.12.0
-pillow
+keras==2.12.0
+numpy==1.23.5
 pandas
-numpy
-requests
-googletrans==4.0.0-rc1
-keras==3.0.5
-tensorflow==2.13.0
-
+gdown
+Pillow
