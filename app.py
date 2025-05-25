@@ -11,6 +11,7 @@ import base64
 from googletrans import Translator
 import os  # ✅ Add this line
 import sys
+import gdown
 
 st.set_page_config(page_title="Smart Waste App", layout="centered")
 
