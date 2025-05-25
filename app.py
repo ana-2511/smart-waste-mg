@@ -9,6 +9,8 @@ from tensorflow.keras.preprocessing import image
 import streamlit.components.v1 as components
 import base64
 from googletrans import Translator
+import os  # ✅ Add this line
+import sys
 
 st.set_page_config(page_title="Smart Waste App", layout="centered")
 
