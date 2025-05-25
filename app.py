@@ -226,7 +226,7 @@ if not st.session_state.logged_in:
         if name_input.strip() != "":
             st.session_state.user_name = name_input.strip().title()
             st.session_state.logged_in = True
-            st.rerun()
+            st.experimental_rerun()
         else:
             st.warning(translate("Please enter a valid name to proceed.", dest_lang))
     st.stop()
